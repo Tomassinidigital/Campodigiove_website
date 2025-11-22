@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Affitto appartamenti a Campo di Giove (AQ) - Scopri i nostri accoglienti appartamenti nel cuore della Maiella">
+    <meta name="keywords" content="affitto appartamenti, Campo di Giove, Abruzzo, montagna, vacanze, sci">
+    <title>Appartamenti Campo di Giove - Affitti Vacanze in Montagna</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <h1>Campo di Giove</h1>
+                    <p class="subtitle">Appartamenti Vacanza</p>
+                </div>
+                <button class="menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#appartamenti">Appartamenti</a></li>
+                    <li><a href="#servizi">Servizi</a></li>
+                    <li><a href="#territorio">Territorio</a></li>
+                    <li><a href="#contatti">Contatti</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="hero-title">Benvenuti a Campo di Giove</h2>
+            <p class="hero-subtitle">Scopri la magia della Maiella nei nostri accoglienti appartamenti</p>
+            <a href="#appartamenti" class="btn btn-primary">Scopri gli Appartamenti</a>
+        </div>
+    </section>
+
+    <!-- Introduzione -->
+    <section class="intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Il Tuo Rifugio in Montagna</h2>
+                <p>Immersi nella natura incontaminata del Parco Nazionale della Maiella, i nostri appartamenti offrono il perfetto equilibrio tra comfort moderno e tradizione abruzzese. Campo di Giove, a pochi passi dagli impianti sciistici e dai sentieri escursionistici, è la destinazione ideale per le tue vacanze in ogni stagione.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appartamenti -->
+    <section id="appartamenti" class="appartamenti">
+        <div class="container">
+            <h2 class="section-title">I Nostri Appartamenti</h2>
+            <p class="section-subtitle">Scegli la soluzione perfetta per la tua vacanza</p>
+
+            <div class="appartamenti-grid">
+                <!-- Appartamento 1 -->
+                <div class="appartamento-card">
+                    <div class="appartamento-image">
+                        <img src="images/appartamento-1.jpg" alt="Appartamento Monolocale" loading="lazy">
+                        <div class="appartamento-badge">Disponibile</div>
+                    </div>
+                    <div class="appartamento-info">
+                        <h3>Monolocale Maiella</h3>
+                        <div class="appartamento-details">
+                            <span class="detail-item">👥 2 persone</span>
+                            <span class="detail-item">📐 35 m²</span>
+                            <span class="detail-item">🛏️ 1 camera</span>
+                        </div>
+                        <p>Accogliente monolocale con angolo cottura attrezzato, bagno moderno e balcone con vista panoramica. Perfetto per coppie.</p>
+                        <div class="appartamento-features">
+                            <span>Wi-Fi</span>
+                            <span>Riscaldamento</span>
+                            <span>TV</span>
+                            <span>Balcone</span>
+                        </div>
+                        <button class="btn btn-secondary" data-appartamento="monolocale">Richiedi Informazioni</button>
+                    </div>
+                </div>
+
+                <!-- Appartamento 2 -->
+                <div class="appartamento-card">
+                    <div class="appartamento-image">
+                        <img src="images/appartamento-2.jpg" alt="Appartamento Bilocale" loading="lazy">
+                        <div class="appartamento-badge">Disponibile</div>
+                    </div>
+                    <div class="appartamento-info">
+                        <h3>Bilocale Montagna</h3>
+                        <div class="appartamento-details">
+                            <span class="detail-item">👥 4 persone</span>
+                            <span class="detail-item">📐 55 m²</span>
+                            <span class="detail-item">🛏️ 2 camere</span>
+                        </div>
+                        <p>Spazioso bilocale con cucina completa, soggiorno luminoso, camera matrimoniale e bagno. Ideale per famiglie.</p>
+                        <div class="appartamento-features">
+                            <span>Wi-Fi</span>
+                            <span>Riscaldamento</span>
+                            <span>TV</span>
+                            <span>Cucina</span>
+                            <span>Balcone</span>
+                        </div>
+                        <button class="btn btn-secondary" data-appartamento="bilocale">Richiedi Informazioni</button>
+                    </div>
+                </div>
+
+                <!-- Appartamento 3 -->
+                <div class="appartamento-card">
+                    <div class="appartamento-image">
+                        <img src="images/appartamento-3.jpg" alt="Appartamento Trilocale" loading="lazy">
+                        <div class="appartamento-badge">Disponibile</div>
+                    </div>
+                    <div class="appartamento-info">
+                        <h3>Trilocale Panorama</h3>
+                        <div class="appartamento-details">
+                            <span class="detail-item">👥 6 persone</span>
+                            <span class="detail-item">📐 75 m²</span>
+                            <span class="detail-item">🛏️ 3 camere</span>
+                        </div>
+                        <p>Ampio trilocale con cucina abitabile, due bagni e tre camere. Vista mozzafiato sulla Maiella. Perfetto per gruppi.</p>
+                        <div class="appartamento-features">
+                            <span>Wi-Fi</span>
+                            <span>Riscaldamento</span>
+                            <span>TV</span>
+                            <span>Cucina</span>
+                            <span>2 Bagni</span>
+                            <span>Balcone</span>
+                        </div>
+                        <button class="btn btn-secondary" data-appartamento="trilocale">Richiedi Informazioni</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi -->
+    <section id="servizi" class="servizi">
+        <div class="container">
+            <h2 class="section-title">Servizi Inclusi</h2>
+            <p class="section-subtitle">Tutto il comfort per la tua vacanza perfetta</p>
+
+            <div class="servizi-grid">
+                <div class="servizio-card">
+                    <div class="servizio-icon">🌐</div>
+                    <h3>Wi-Fi Gratuito</h3>
+                    <p>Connessione internet ad alta velocità in tutti gli appartamenti</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🅿️</div>
+                    <h3>Parcheggio</h3>
+                    <p>Posto auto riservato incluso nel prezzo</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🔥</div>
+                    <h3>Riscaldamento</h3>
+                    <p>Sistema di riscaldamento autonomo per il massimo comfort</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🧺</div>
+                    <h3>Biancheria</h3>
+                    <p>Lenzuola e asciugamani forniti e cambiati settimanalmente</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🍳</div>
+                    <h3>Cucina Attrezzata</h3>
+                    <p>Cucina completa con elettrodomestici e utensili</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🎿</div>
+                    <h3>Deposito Sci</h3>
+                    <p>Spazio dedicato per attrezzatura sportiva</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Territorio -->
+    <section id="territorio" class="territorio">
+        <div class="container">
+            <h2 class="section-title">Scopri il Territorio</h2>
+            <div class="territorio-content">
+                <div class="territorio-text">
+                    <h3>Campo di Giove e la Maiella</h3>
+                    <p>Campo di Giove è un affascinante borgo montano situato nel cuore del Parco Nazionale della Maiella, in Abruzzo. Il paese offre:</p>
+                    <ul class="territorio-list">
+                        <li>⛷️ <strong>Impianti sciistici</strong> - Piste per tutti i livelli a pochi minuti dagli appartamenti</li>
+                        <li>🥾 <strong>Escursionismo</strong> - Sentieri naturalistici nel Parco della Maiella</li>
+                        <li>🏔️ <strong>Natura</strong> - Paesaggi mozzafiato in ogni stagione</li>
+                        <li>🏰 <strong>Cultura</strong> - Borghi medievali e tradizioni abruzzesi</li>
+                        <li>🍝 <strong>Gastronomia</strong> - Ristoranti tipici con prodotti locali</li>
+                        <li>🚴 <strong>Sport</strong> - Mountain bike, arrampicata, parapendio</li>
+                    </ul>
+                </div>
+                <div class="territorio-highlights">
+                    <div class="highlight-card">
+                        <h4>Estate</h4>
+                        <p>Trekking, mountain bike, escursioni naturalistiche e temperature fresche</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Inverno</h4>
+                        <p>Sci, snowboard, ciaspolate e atmosfera magica della montagna innevata</p>
+                    </div>
+                    <div class="highlight-card">
+                        <h4>Primavera/Autunno</h4>
+                        <p>Passeggiate nei boschi, raccolta funghi e foliage spettacolare</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti -->
+    <section id="contatti" class="contatti">
+        <div class="container">
+            <h2 class="section-title">Contattaci</h2>
+            <p class="section-subtitle">Siamo a tua disposizione per qualsiasi informazione</p>
+
+            <div class="contatti-content">
+                <div class="contatti-info">
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div>
+                            <h4>Indirizzo</h4>
+                            <p>Campo di Giove (AQ)<br>Abruzzo, Italia</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">📞</div>
+                        <div>
+                            <h4>Telefono</h4>
+                            <p>+39 123 456 7890</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">✉️</div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@appartamenticampodigiove.it</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">⏰</div>
+                        <div>
+                            <h4>Orari</h4>
+                            <p>Lun-Dom: 9:00 - 20:00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="nome">Nome e Cognome *</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="appartamento">Appartamento di interesse</label>
+                        <select id="appartamento" name="appartamento">
+                            <option value="">Seleziona...</option>
+                            <option value="monolocale">Monolocale Maiella</option>
+                            <option value="bilocale">Bilocale Montagna</option>
+                            <option value="trilocale">Trilocale Panorama</option>
+                            <option value="altro">Informazioni generali</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="messaggio">Messaggio *</label>
+                        <textarea id="messaggio" name="messaggio" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Invia Richiesta</button>
+                    <div class="form-message" id="formMessage"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Campo di Giove</h3>
+                    <p>Appartamenti Vacanza nel cuore della Maiella</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Rapidi</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#appartamenti">Appartamenti</a></li>
+                        <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Informazioni</h4>
+                    <ul>
+                        <li><a href="#territorio">Il Territorio</a></li>
+                        <li><a href="https://www.parcomajella.it" target="_blank">Parco della Maiella</a></li>
+                        <li><a href="https://www.campodigioveski.it" target="_blank">Impianti Sciistici</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                        <a href="#" aria-label="TripAdvisor">TripAdvisor</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Appartamenti Campo di Giove. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Torna su">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
