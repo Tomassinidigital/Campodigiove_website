@@ -62,32 +62,111 @@
     <section id="appartamenti" class="appartamenti">
         <div class="container">
             <h2 class="section-title">Il Nostro Appartamento</h2>
-            <p class="section-subtitle">Spazio e comfort per tutta la famiglia</p>
+            <p class="section-subtitle">Spazio e comfort per tutta la famiglia a Campo di Giove</p>
 
-            <div class="appartamenti-grid">
-                <!-- Appartamento Principale -->
-                <div class="appartamento-card" style="max-width: 800px; margin: 0 auto;">
-                    <div class="appartamento-image">
-                        <img src="images/appartamento-1.jpg" alt="Appartamento Campo di Giove" loading="lazy">
-                        <div class="appartamento-badge">Disponibile</div>
-                    </div>
+            <!-- Galleria Fotografica -->
+            <div style="max-width: 1000px; margin: 0 auto 40px;">
+                <div class="appartamento-image" style="margin-bottom: 20px;">
+                    <img src="images/appartamento-1.jpg" alt="Soggiorno appartamento Campo di Giove" loading="lazy">
+                    <div class="appartamento-badge">Disponibile</div>
+                </div>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 30px;">
+                    <img src="images/appartamento-1.jpg" alt="Cucina appartamento" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    <img src="images/appartamento-1.jpg" alt="Camera da letto appartamento" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                    <img src="images/appartamento-1.jpg" alt="Bagno appartamento" loading="lazy" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px;">
+                </div>
+            </div>
+
+            <!-- Dettagli Appartamento -->
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div class="appartamento-card">
                     <div class="appartamento-info">
-                        <h3>Appartamento per Vacanze</h3>
-                        <div class="appartamento-details">
+                        <h3 style="font-size: 2rem; margin-bottom: 20px;">Appartamento per Vacanze - Campo di Giove</h3>
+
+                        <!-- Caratteristiche Principali -->
+                        <div class="appartamento-details" style="justify-content: center; margin-bottom: 30px;">
                             <span class="detail-item">👥 6-7 posti letto</span>
                             <span class="detail-item">🛏️ 1 camera matrimoniale</span>
                             <span class="detail-item">🚿 1 bagno con doccia</span>
+                            <span class="detail-item">📍 200m dal centro</span>
                         </div>
-                        <p>Accogliente appartamento con cucina/soggiorno, camera da letto matrimoniale e bagno con doccia. Perfetto per famiglie e gruppi di amici che desiderano una vacanza in montagna.</p>
-                        <p style="margin-top: 10px;"><strong>✨ Opzione extra:</strong> Possibilità di prenotare un intero piano (2 appartamenti affiancati) per 12-14 persone!</p>
-                        <div class="appartamento-features">
-                            <span>Cucina/Soggiorno</span>
-                            <span>Parcheggio</span>
-                            <span>Riscaldamento</span>
-                            <span>Stoviglie</span>
-                            <span>Pulizie incluse</span>
+
+                        <!-- Descrizione -->
+                        <div style="text-align: left; margin-bottom: 30px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">📝 Descrizione</h4>
+                            <p>Accogliente appartamento situato a soli 200 metri dal centro di Campo di Giove, nel cuore del Parco Nazionale della Maiella. L'appartamento offre tutto il comfort necessario per una vacanza in montagna perfetta, sia in inverno che in estate.</p>
+                            <p style="margin-top: 10px;">Ideale per famiglie e gruppi di amici, può ospitare comodamente fino a 6-7 persone. La posizione strategica permette di raggiungere facilmente gli impianti sciistici e i sentieri del parco.</p>
                         </div>
-                        <button class="btn btn-secondary" data-appartamento="principale">Richiedi Informazioni</button>
+
+                        <!-- Composizione Appartamento -->
+                        <div style="text-align: left; margin-bottom: 30px; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">🏠 Composizione dell'appartamento</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 8px 0; border-bottom: 1px solid #e0e0e0;">
+                                    <strong>🍳 Cucina/Soggiorno:</strong> Spazio open space attrezzato con tutto il necessario per cucinare e rilassarsi. Stoviglie complete, zona pranzo e area relax.
+                                </li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #e0e0e0;">
+                                    <strong>🛏️ Camera matrimoniale:</strong> Camera da letto con letto matrimoniale, armadio e spazio per valigie.
+                                </li>
+                                <li style="padding: 8px 0; border-bottom: 1px solid #e0e0e0;">
+                                    <strong>🛋️ Posti letto aggiuntivi:</strong> Divano letto e/o letti supplementari nel soggiorno per raggiungere i 6-7 posti letto totali.
+                                </li>
+                                <li style="padding: 8px 0;">
+                                    <strong>🚿 Bagno:</strong> Bagno completo con doccia, lavandino, wc e bidet.
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Servizi e Dotazioni -->
+                        <div style="text-align: left; margin-bottom: 30px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">✨ Servizi e dotazioni</h4>
+                            <div class="appartamento-features" style="justify-content: flex-start;">
+                                <span>🔥 Riscaldamento autonomo</span>
+                                <span>🍳 Cucina attrezzata</span>
+                                <span>🍽️ Stoviglie complete</span>
+                                <span>🅿️ Parcheggio disponibile</span>
+                                <span>🧹 Pulizie incluse</span>
+                                <span>⚡ Luce e gas inclusi*</span>
+                            </div>
+                            <p style="margin-top: 15px; font-size: 0.9rem; color: #666;">
+                                * Per soggiorni di 5 o più giorni: luce, gas, riscaldamento, stoviglie e pulizie iniziali/finali sono <strong>TUTTO COMPRESO</strong> nel prezzo base!
+                            </p>
+                        </div>
+
+                        <!-- Opzione Extra -->
+                        <div style="background: linear-gradient(135deg, #2c5f2d 0%, #3a7a3c 100%); color: white; padding: 25px; border-radius: 12px; margin-bottom: 30px; text-align: center;">
+                            <h4 style="color: white; margin-bottom: 15px; font-size: 1.3rem;">✨ Opzione per Gruppi Numerosi</h4>
+                            <p style="font-size: 1.1rem; margin-bottom: 10px;">
+                                <strong>Possibilità di prenotare l'intero piano</strong>
+                            </p>
+                            <p style="opacity: 0.95;">
+                                2 appartamenti affiancati • 12-14 posti letto totali
+                            </p>
+                            <p style="margin-top: 15px; font-size: 0.95rem; opacity: 0.9;">
+                                Perfetto per gruppi di amici, famiglie numerose o eventi speciali!
+                            </p>
+                        </div>
+
+                        <!-- Posizione -->
+                        <div style="text-align: left; margin-bottom: 30px;">
+                            <h4 style="color: var(--primary-color); margin-bottom: 15px;">📍 Posizione</h4>
+                            <ul style="list-style: none; padding: 0;">
+                                <li style="padding: 5px 0;">✓ Centro di Campo di Giove: <strong>200 metri</strong></li>
+                                <li style="padding: 5px 0;">✓ Impianti sciistici: <strong>pochi minuti in auto</strong></li>
+                                <li style="padding: 5px 0;">✓ Parco Nazionale della Maiella: <strong>immerso nel parco</strong></li>
+                                <li style="padding: 5px 0;">✓ Sentieri escursionistici: <strong>a portata di mano</strong></li>
+                            </ul>
+                        </div>
+
+                        <!-- CTA -->
+                        <div style="text-align: center; margin-top: 40px;">
+                            <button class="btn btn-primary" data-appartamento="principale" style="font-size: 1.1rem; padding: 15px 40px;">
+                                📞 Richiedi Disponibilità e Prezzi
+                            </button>
+                            <p style="margin-top: 15px; color: #666; font-size: 0.9rem;">
+                                Contattaci per verificare disponibilità, prezzi e per ricevere tutte le informazioni
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
