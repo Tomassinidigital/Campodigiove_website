@@ -8,15 +8,15 @@
 }
 
 :root {
-    /* Palette Colori - Ispirata alla montagna */
-    --primary-color: #2c5f2d;      /* Verde foresta */
+    /* Palette Colori - Ispirata alla montagna (contrasto migliorato) */
+    --primary-color: #2c5f2d;      /* Verde foresta - più scuro per contrasto */
     --primary-dark: #1a3a1b;
     --primary-light: #4a8f4c;
-    --secondary-color: #8b4513;     /* Marrone legno */
+    --secondary-color: #7a3b0f;     /* Marrone legno - più scuro */
     --secondary-light: #a0522d;
-    --accent-color: #d4af37;        /* Oro/giallo autunnale */
-    --text-dark: #2d3436;
-    --text-light: #636e72;
+    --accent-color: #c9a428;        /* Oro - più scuro per contrasto */
+    --text-dark: #1a1d1f;           /* Nero quasi puro per massimo contrasto */
+    --text-light: #4a545a;          /* Grigio più scuro per leggibilità */
     --white: #ffffff;
     --light-bg: #f8f9fa;
     --gray-100: #f1f3f5;
@@ -212,6 +212,71 @@ ul {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.hero-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.hero-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.hero-slide .hero-overlay {
+    background: rgba(0, 0, 0, 0.45); /* Overlay più scuro per miglior contrasto testo */
+}
+
+/* Slider Navigation Dots */
+.hero-slider-dots {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: flex;
+    gap: 12px;
+}
+
+.hero-slider-dots .dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-slider-dots .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+}
+
+.hero-slider-dots .dot.active {
+    background: var(--white);
+    border-color: var(--white);
+    width: 40px;
+    border-radius: 7px;
 }
 
 /* ===================================
