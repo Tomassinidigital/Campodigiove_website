@@ -7,7 +7,7 @@ on:
     branches:
       - main
       - master
-      - claude/enable-gitlab-preview-011mpJLG1ZvMextff744t3zh
+      - claude/**
 
   # Permette di eseguire manualmente dalla tab Actions
   workflow_dispatch:
