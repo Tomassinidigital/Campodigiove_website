@@ -766,6 +766,13 @@ ul {
     color: rgba(255, 255, 255, 0.6);
 }
 
+.footer-update {
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: rgba(255, 255, 255, 0.5);
+    font-style: italic;
+}
+
 /* ===================================
    Back to Top Button
    =================================== */
