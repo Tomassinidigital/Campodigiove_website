@@ -1,4 +1,59 @@
 // ===================================
+// Hero Slider
+// ===================================
+document.addEventListener('DOMContentLoaded', () => {
+    const slides = document.querySelectorAll('.hero-slide');
+    const dots = document.querySelectorAll('.hero-slider-dots .dot');
+    let currentSlide = 0;
+    const slideInterval = 5000; // Cambia slide ogni 5 secondi
+
+    // Funzione per cambiare slide
+    function changeSlide(n) {
+        // Rimuovi active da slide e dot correnti
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+
+        // Calcola nuovo indice
+        currentSlide = (n + slides.length) % slides.length;
+
+        // Aggiungi active a nuova slide e dot
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    // Auto-play slider
+    let autoPlay = setInterval(() => {
+        changeSlide(currentSlide + 1);
+    }, slideInterval);
+
+    // Click sui dots per navigazione manuale
+    dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            changeSlide(index);
+            // Reset auto-play quando utente clicca manualmente
+            clearInterval(autoPlay);
+            autoPlay = setInterval(() => {
+                changeSlide(currentSlide + 1);
+            }, slideInterval);
+        });
+    });
+
+    // Pausa auto-play quando mouse sopra lo slider
+    const heroSection = document.querySelector('.hero');
+    if (heroSection) {
+        heroSection.addEventListener('mouseenter', () => {
+            clearInterval(autoPlay);
+        });
+
+        heroSection.addEventListener('mouseleave', () => {
+            autoPlay = setInterval(() => {
+                changeSlide(currentSlide + 1);
+            }, slideInterval);
+        });
+    }
+});
+
+// ===================================
 // Mobile Menu Toggle
 // ===================================
 const menuToggle = document.querySelector('.menu-toggle');
