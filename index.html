@@ -27,9 +27,10 @@
                 </button>
                 <ul class="nav-menu">
                     <li><a href="#home">Home</a></li>
-                    <li><a href="#appartamenti">Appartamenti</a></li>
+                    <li><a href="#appartamenti">Appartamento</a></li>
                     <li><a href="#servizi">Servizi</a></li>
-                    <li><a href="#territorio">Territorio</a></li>
+                    <li><a href="#cosa-fare">Cosa Fare</a></li>
+                    <li><a href="#vicinanze">Nelle Vicinanze</a></li>
                     <li><a href="#contatti">Contatti</a></li>
                 </ul>
             </div>
@@ -51,7 +52,8 @@
         <div class="container">
             <div class="intro-content">
                 <h2>Il Tuo Rifugio in Montagna</h2>
-                <p>Immersi nella natura incontaminata del Parco Nazionale della Maiella, i nostri appartamenti offrono il perfetto equilibrio tra comfort moderno e tradizione abruzzese. Campo di Giove, a pochi passi dagli impianti sciistici e dai sentieri escursionistici, è la destinazione ideale per le tue vacanze in ogni stagione.</p>
+                <p>Situato a Campo di Giove, a soli 200m dal centro del paese, il nostro appartamento offre il perfetto equilibrio tra comfort e tradizione abruzzese. Immerso nella natura incontaminata del Parco Nazionale della Maiella, a pochi passi dagli impianti sciistici più alti d'Abruzzo e dai sentieri escursionistici, è la destinazione ideale per le tue vacanze in ogni stagione.</p>
+                <p><strong>Offerta speciale:</strong> Per soggiorni di 5 o più giorni, luce, gas, riscaldamento, stoviglie e pulizie iniziali/finali sono <strong>TUTTO COMPRESO</strong> nel prezzo base!</p>
             </div>
         </div>
     </section>
@@ -59,82 +61,33 @@
     <!-- Appartamenti -->
     <section id="appartamenti" class="appartamenti">
         <div class="container">
-            <h2 class="section-title">I Nostri Appartamenti</h2>
-            <p class="section-subtitle">Scegli la soluzione perfetta per la tua vacanza</p>
+            <h2 class="section-title">Il Nostro Appartamento</h2>
+            <p class="section-subtitle">Spazio e comfort per tutta la famiglia</p>
 
             <div class="appartamenti-grid">
-                <!-- Appartamento 1 -->
-                <div class="appartamento-card">
+                <!-- Appartamento Principale -->
+                <div class="appartamento-card" style="max-width: 800px; margin: 0 auto;">
                     <div class="appartamento-image">
-                        <img src="images/appartamento-1.jpg" alt="Appartamento Monolocale" loading="lazy">
+                        <img src="images/appartamento-1.jpg" alt="Appartamento Campo di Giove" loading="lazy">
                         <div class="appartamento-badge">Disponibile</div>
                     </div>
                     <div class="appartamento-info">
-                        <h3>Monolocale Maiella</h3>
+                        <h3>Appartamento per Vacanze</h3>
                         <div class="appartamento-details">
-                            <span class="detail-item">👥 2 persone</span>
-                            <span class="detail-item">📐 35 m²</span>
-                            <span class="detail-item">🛏️ 1 camera</span>
+                            <span class="detail-item">👥 6-7 posti letto</span>
+                            <span class="detail-item">🛏️ 1 camera matrimoniale</span>
+                            <span class="detail-item">🚿 1 bagno con doccia</span>
                         </div>
-                        <p>Accogliente monolocale con angolo cottura attrezzato, bagno moderno e balcone con vista panoramica. Perfetto per coppie.</p>
+                        <p>Accogliente appartamento con cucina/soggiorno, camera da letto matrimoniale e bagno con doccia. Perfetto per famiglie e gruppi di amici che desiderano una vacanza in montagna.</p>
+                        <p style="margin-top: 10px;"><strong>✨ Opzione extra:</strong> Possibilità di prenotare un intero piano (2 appartamenti affiancati) per 12-14 persone!</p>
                         <div class="appartamento-features">
-                            <span>Wi-Fi</span>
+                            <span>Cucina/Soggiorno</span>
+                            <span>Parcheggio</span>
                             <span>Riscaldamento</span>
-                            <span>TV</span>
-                            <span>Balcone</span>
+                            <span>Stoviglie</span>
+                            <span>Pulizie incluse</span>
                         </div>
-                        <button class="btn btn-secondary" data-appartamento="monolocale">Richiedi Informazioni</button>
-                    </div>
-                </div>
-
-                <!-- Appartamento 2 -->
-                <div class="appartamento-card">
-                    <div class="appartamento-image">
-                        <img src="images/appartamento-2.jpg" alt="Appartamento Bilocale" loading="lazy">
-                        <div class="appartamento-badge">Disponibile</div>
-                    </div>
-                    <div class="appartamento-info">
-                        <h3>Bilocale Montagna</h3>
-                        <div class="appartamento-details">
-                            <span class="detail-item">👥 4 persone</span>
-                            <span class="detail-item">📐 55 m²</span>
-                            <span class="detail-item">🛏️ 2 camere</span>
-                        </div>
-                        <p>Spazioso bilocale con cucina completa, soggiorno luminoso, camera matrimoniale e bagno. Ideale per famiglie.</p>
-                        <div class="appartamento-features">
-                            <span>Wi-Fi</span>
-                            <span>Riscaldamento</span>
-                            <span>TV</span>
-                            <span>Cucina</span>
-                            <span>Balcone</span>
-                        </div>
-                        <button class="btn btn-secondary" data-appartamento="bilocale">Richiedi Informazioni</button>
-                    </div>
-                </div>
-
-                <!-- Appartamento 3 -->
-                <div class="appartamento-card">
-                    <div class="appartamento-image">
-                        <img src="images/appartamento-3.jpg" alt="Appartamento Trilocale" loading="lazy">
-                        <div class="appartamento-badge">Disponibile</div>
-                    </div>
-                    <div class="appartamento-info">
-                        <h3>Trilocale Panorama</h3>
-                        <div class="appartamento-details">
-                            <span class="detail-item">👥 6 persone</span>
-                            <span class="detail-item">📐 75 m²</span>
-                            <span class="detail-item">🛏️ 3 camere</span>
-                        </div>
-                        <p>Ampio trilocale con cucina abitabile, due bagni e tre camere. Vista mozzafiato sulla Maiella. Perfetto per gruppi.</p>
-                        <div class="appartamento-features">
-                            <span>Wi-Fi</span>
-                            <span>Riscaldamento</span>
-                            <span>TV</span>
-                            <span>Cucina</span>
-                            <span>2 Bagni</span>
-                            <span>Balcone</span>
-                        </div>
-                        <button class="btn btn-secondary" data-appartamento="trilocale">Richiedi Informazioni</button>
+                        <button class="btn btn-secondary" data-appartamento="principale">Richiedi Informazioni</button>
                     </div>
                 </div>
             </div>
@@ -149,34 +102,111 @@
 
             <div class="servizi-grid">
                 <div class="servizio-card">
-                    <div class="servizio-icon">🌐</div>
-                    <h3>Wi-Fi Gratuito</h3>
-                    <p>Connessione internet ad alta velocità in tutti gli appartamenti</p>
+                    <div class="servizio-icon">⚡</div>
+                    <h3>Luce e Gas</h3>
+                    <p>Tutto compreso nel prezzo per soggiorni di 5+ giorni</p>
                 </div>
                 <div class="servizio-card">
                     <div class="servizio-icon">🅿️</div>
                     <h3>Parcheggio</h3>
-                    <p>Posto auto riservato incluso nel prezzo</p>
+                    <p>Posto auto disponibile per gli ospiti</p>
                 </div>
                 <div class="servizio-card">
                     <div class="servizio-icon">🔥</div>
                     <h3>Riscaldamento</h3>
-                    <p>Sistema di riscaldamento autonomo per il massimo comfort</p>
+                    <p>Incluso nel prezzo per il massimo comfort</p>
                 </div>
                 <div class="servizio-card">
-                    <div class="servizio-icon">🧺</div>
-                    <h3>Biancheria</h3>
-                    <p>Lenzuola e asciugamani forniti e cambiati settimanalmente</p>
+                    <div class="servizio-icon">🧹</div>
+                    <h3>Pulizie</h3>
+                    <p>Pulizie iniziali e finali incluse nel prezzo</p>
                 </div>
                 <div class="servizio-card">
                     <div class="servizio-icon">🍳</div>
-                    <h3>Cucina Attrezzata</h3>
-                    <p>Cucina completa con elettrodomestici e utensili</p>
+                    <h3>Cucina/Soggiorno</h3>
+                    <p>Spazio attrezzato con stoviglie complete</p>
                 </div>
                 <div class="servizio-card">
+                    <div class="servizio-icon">🏔️</div>
+                    <h3>Posizione Centrale</h3>
+                    <p>A soli 200m dal centro di Campo di Giove</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cosa Fare -->
+    <section id="cosa-fare" class="territorio">
+        <div class="container">
+            <h2 class="section-title">Cosa Fare a Campo di Giove</h2>
+            <p class="section-subtitle">Attività per ogni stagione nel cuore della Maiella</p>
+
+            <div class="territorio-content">
+                <div class="territorio-text">
+                    <h3>⛷️ Inverno - Sci e Neve</h3>
+                    <p>Campo di Giove vanta gli <strong>impianti sciistici più alti dell'Abruzzo</strong> (fino a 2.350 metri):</p>
+                    <ul class="territorio-list">
+                        <li>🎿 <strong>Piste da sci</strong> - 9 piste per 10 km totali: Serra Campanile, Le Capre, Porrara (nera tecnica di 2.100m) e Delle Signore</li>
+                        <li>❄️ <strong>Sci di fondo</strong> - Anelli battuti per tecnica classica e skating</li>
+                        <li>🥾 <strong>Ciaspolate</strong> - Escursioni sulla neve con racchette</li>
+                        <li>⛷️ <strong>Sci alpinismo</strong> - Percorsi vicino agli impianti Le Piane</li>
+                        <li>👨‍👩‍👧‍👦 <strong>Perfetto per famiglie</strong> - Piste blu (70%), verde (10%), rosse e nere</li>
+                    </ul>
+                </div>
+
+                <div class="territorio-text" style="margin-top: 30px;">
+                    <h3>🌄 Estate - Natura e Avventura</h3>
+                    <p>La natura del Parco Nazionale della Maiella offre infinite possibilità:</p>
+                    <ul class="territorio-list">
+                        <li>🥾 <strong>Trekking</strong> - Sentieri nel Parco della Maiella tra boschi e panorami mozzafiato</li>
+                        <li>🚴 <strong>Mountain bike</strong> - Percorsi su sentieri e strade di montagna</li>
+                        <li>🐴 <strong>Passeggiate a cavallo</strong> - Escursioni guidate nella natura</li>
+                        <li>🪑 <strong>Big Bench</strong> - Panchina gigante con vista spettacolare, ideale per foto</li>
+                        <li>🌲 <strong>Adventure Park</strong> - Percorsi avventura tra gli alberi di varie difficoltà</li>
+                        <li>🏰 <strong>Centro storico</strong> - Vicoli medievali, Palazzo Nanni, Museo delle arti e tradizioni</li>
+                        <li>🚂 <strong>Ferrovia dei Parchi</strong> - Treno storico attraverso paesaggi incantevoli</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nelle Vicinanze -->
+    <section id="vicinanze" class="servizi">
+        <div class="container">
+            <h2 class="section-title">Nelle Vicinanze</h2>
+            <p class="section-subtitle">Scopri le meraviglie dell'Abruzzo montano</p>
+
+            <div class="servizi-grid">
+                <div class="servizio-card">
                     <div class="servizio-icon">🎿</div>
-                    <h3>Deposito Sci</h3>
-                    <p>Spazio dedicato per attrezzatura sportiva</p>
+                    <h3>Roccaraso</h3>
+                    <p><strong>10 km</strong> - Famosa stazione sciistica con comprensori Roccaraso-Rivisondoli. Nel raggio di 30 km, ben 7 comprensori sciistici</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🎨</div>
+                    <h3>Sulmona</h3>
+                    <p><strong>20 km</strong> - Città di Ovidio, famosa per i confetti artigianali. Centro storico medievale e ottimi ristoranti</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">💙</div>
+                    <h3>Lago di Scanno</h3>
+                    <p><strong>25 km</strong> - Il lago a forma di cuore con acque cristalline dai colori incantati. Borgo di Scanno e Eremo di San Domenico</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">⛪</div>
+                    <h3>Madonna di Coccia</h3>
+                    <p><strong>3 km</strong> - Antico monastero con chiesetta, raggiungibile con una piacevole passeggiata di 10 minuti</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🏔️</div>
+                    <h3>Parco della Maiella</h3>
+                    <p>Campo di Giove è il centro abitato più in quota dell'intero Parco Nazionale della Maiella (1.064 m)</p>
+                </div>
+                <div class="servizio-card">
+                    <div class="servizio-icon">🏰</div>
+                    <h3>Pescocostanzo</h3>
+                    <p><strong>15 km</strong> - Uno dei borghi più belli d'Italia con architettura rinascimentale e comprensorio sciistico</p>
                 </div>
             </div>
         </div>
@@ -185,32 +215,31 @@
     <!-- Territorio -->
     <section id="territorio" class="territorio">
         <div class="container">
-            <h2 class="section-title">Scopri il Territorio</h2>
+            <h2 class="section-title">Campo di Giove e la Maiella</h2>
             <div class="territorio-content">
                 <div class="territorio-text">
-                    <h3>Campo di Giove e la Maiella</h3>
-                    <p>Campo di Giove è un affascinante borgo montano situato nel cuore del Parco Nazionale della Maiella, in Abruzzo. Il paese offre:</p>
+                    <h3>Un borgo autentico nel cuore del Parco</h3>
+                    <p>Campo di Giove è un affascinante borgo montano situato nel cuore del Parco Nazionale della Maiella, in Abruzzo. Il paese offre un perfetto mix di tradizione, natura e attività all'aria aperta.</p>
                     <ul class="territorio-list">
-                        <li>⛷️ <strong>Impianti sciistici</strong> - Piste per tutti i livelli a pochi minuti dagli appartamenti</li>
-                        <li>🥾 <strong>Escursionismo</strong> - Sentieri naturalistici nel Parco della Maiella</li>
                         <li>🏔️ <strong>Natura</strong> - Paesaggi mozzafiato in ogni stagione</li>
-                        <li>🏰 <strong>Cultura</strong> - Borghi medievali e tradizioni abruzzesi</li>
-                        <li>🍝 <strong>Gastronomia</strong> - Ristoranti tipici con prodotti locali</li>
-                        <li>🚴 <strong>Sport</strong> - Mountain bike, arrampicata, parapendio</li>
+                        <li>🏰 <strong>Storia</strong> - Centro medievale con palazzi storici e chiese antiche</li>
+                        <li>🍝 <strong>Gastronomia</strong> - Ristoranti tipici con cucina abruzzese: salumi, formaggi e pasta tradizionale</li>
+                        <li>📸 <strong>Laghetto Ticino</strong> - Laghetto morenico-carsico raggiungibile a piedi</li>
+                        <li>🦌 <strong>PineCube</strong> - Osservatorio esclusivo per paesaggio e fauna (su prenotazione)</li>
                     </ul>
                 </div>
                 <div class="territorio-highlights">
                     <div class="highlight-card">
                         <h4>Estate</h4>
-                        <p>Trekking, mountain bike, escursioni naturalistiche e temperature fresche</p>
+                        <p>Trekking, mountain bike, adventure park e temperature fresche per sfuggire al caldo</p>
                     </div>
                     <div class="highlight-card">
                         <h4>Inverno</h4>
-                        <p>Sci, snowboard, ciaspolate e atmosfera magica della montagna innevata</p>
+                        <p>Piste da sci più alte d'Abruzzo, ciaspolate e atmosfera magica della montagna innevata</p>
                     </div>
                     <div class="highlight-card">
                         <h4>Primavera/Autunno</h4>
-                        <p>Passeggiate nei boschi, raccolta funghi e foliage spettacolare</p>
+                        <p>Passeggiate nei boschi, foliage spettacolare e tranquillità lontano dalla folla</p>
                     </div>
                 </div>
             </div>
@@ -269,12 +298,11 @@
                         <input type="tel" id="telefono" name="telefono">
                     </div>
                     <div class="form-group">
-                        <label for="appartamento">Appartamento di interesse</label>
+                        <label for="appartamento">Tipo di richiesta</label>
                         <select id="appartamento" name="appartamento">
                             <option value="">Seleziona...</option>
-                            <option value="monolocale">Monolocale Maiella</option>
-                            <option value="bilocale">Bilocale Montagna</option>
-                            <option value="trilocale">Trilocale Panorama</option>
+                            <option value="principale">Appartamento 6-7 posti letto</option>
+                            <option value="piano-intero">Intero piano (2 appartamenti, 12-14 persone)</option>
                             <option value="altro">Informazioni generali</option>
                         </select>
                     </div>
@@ -301,17 +329,19 @@
                     <h4>Link Rapidi</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#appartamenti">Appartamenti</a></li>
+                        <li><a href="#appartamenti">Appartamento</a></li>
                         <li><a href="#servizi">Servizi</a></li>
+                        <li><a href="#cosa-fare">Cosa Fare</a></li>
                         <li><a href="#contatti">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Informazioni</h4>
                     <ul>
+                        <li><a href="#vicinanze">Nelle Vicinanze</a></li>
                         <li><a href="#territorio">Il Territorio</a></li>
                         <li><a href="https://www.parcomajella.it" target="_blank">Parco della Maiella</a></li>
-                        <li><a href="https://www.campodigioveski.it" target="_blank">Impianti Sciistici</a></li>
+                        <li><a href="https://www.comune.campodigiove.aq.it" target="_blank">Comune di Campo di Giove</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
