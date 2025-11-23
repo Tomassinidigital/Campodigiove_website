@@ -1,0 +1,22 @@
+# Configurazione GitLab CI/CD per GitLab Pages
+# Il sito sarà pubblicato su https://<username>.gitlab.io/<project-name>
+
+stages:
+  - deploy
+
+pages:
+  stage: deploy
+  image: alpine:latest
+  script:
+    # Crea la cartella public per GitLab Pages
+    - mkdir -p public
+    # Copia tutti i file del sito nella cartella public
+    - cp -r index.html styles.css script.js images public/
+  artifacts:
+    paths:
+      - public
+  rules:
+    # Pubblica solo quando si fa push sul branch specificato o su main/master
+    - if: $CI_COMMIT_BRANCH == "claude/enable-gitlab-preview-011mpJLG1ZvMextff744t3zh"
+    - if: $CI_COMMIT_BRANCH == "main"
+    - if: $CI_COMMIT_BRANCH == "master"
