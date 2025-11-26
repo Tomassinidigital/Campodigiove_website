@@ -8,30 +8,31 @@
 }
 
 :root {
-    /* Palette Colori - Ispirata alla montagna */
-    --primary-color: #2c5f2d;      /* Verde foresta */
-    --primary-dark: #1a3a1b;
-    --primary-light: #4a8f4c;
-    --secondary-color: #8b4513;     /* Marrone legno */
-    --secondary-light: #a0522d;
-    --accent-color: #d4af37;        /* Oro/giallo autunnale */
-    --text-dark: #2d3436;
-    --text-light: #636e72;
+    /* Palette Colori - Luxury Professional */
+    --primary-color: #1a1a1a;       /* Nero carbone elegante */
+    --primary-dark: #000000;
+    --primary-light: #3a3a3a;
+    --secondary-color: #c9b18a;     /* Beige caldo/taupe */
+    --secondary-light: #d4c5a6;
+    --accent-color: #b8956a;        /* Champagne/oro chiaro */
+    --text-dark: #1a1a1a;
+    --text-light: #6b6b6b;
     --white: #ffffff;
-    --light-bg: #f8f9fa;
-    --gray-100: #f1f3f5;
-    --gray-200: #e9ecef;
-    --gray-300: #dee2e6;
-    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    --shadow-lg: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --light-bg: #fafafa;
+    --gray-100: #f5f5f5;
+    --gray-200: #eeeeee;
+    --gray-300: #e0e0e0;
+    --shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 15px 40px rgba(0, 0, 0, 0.12);
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.06);
 
     /* Typography */
     --font-main: 'Montserrat', sans-serif;
     --font-heading: 'Playfair Display', serif;
 
     /* Spacing */
-    --section-padding: 80px 0;
-    --container-padding: 20px;
+    --section-padding: 100px 0;
+    --container-padding: 30px;
 }
 
 html {
@@ -42,8 +43,10 @@ html {
 body {
     font-family: var(--font-main);
     color: var(--text-dark);
-    line-height: 1.6;
+    line-height: 1.8;
     overflow-x: hidden;
+    font-weight: 300;
+    letter-spacing: 0.3px;
 }
 
 .container {
@@ -73,18 +76,19 @@ ul {
    =================================== */
 .header {
     background: var(--white);
-    box-shadow: var(--shadow);
+    box-shadow: var(--shadow-subtle);
     position: sticky;
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    border-bottom: 1px solid var(--gray-200);
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px var(--container-padding);
+    padding: 20px var(--container-padding);
 }
 
 .logo h1 {
@@ -92,40 +96,46 @@ ul {
     font-size: 1.8rem;
     color: var(--primary-color);
     margin-bottom: 0;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .logo .subtitle {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     color: var(--text-light);
     font-weight: 300;
-    margin-top: -5px;
+    margin-top: -3px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .nav-menu {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: center;
 }
 
 .nav-menu a {
-    font-weight: 500;
+    font-weight: 400;
     color: var(--text-dark);
     position: relative;
     transition: color 0.3s ease;
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
 }
 
 .nav-menu a:hover {
-    color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 .nav-menu a::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: -8px;
     left: 0;
     width: 0;
-    height: 2px;
-    background: var(--primary-color);
+    height: 1px;
+    background: var(--accent-color);
     transition: width 0.3s ease;
 }
 
@@ -157,13 +167,12 @@ ul {
 .hero {
     position: relative;
     height: 100vh;
-    min-height: 600px;
+    min-height: 650px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%);
-    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><path d="M0,400 Q300,200 600,350 T1200,300 L1200,600 L0,600 Z" fill="%232c5f2d" opacity="0.3"/><path d="M0,450 Q400,250 800,400 T1200,350 L1200,600 L0,600 Z" fill="%231a3a1b" opacity="0.2"/></svg>');
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2a2a2a 100%);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -175,7 +184,7 @@ ul {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.3) 100%);
 }
 
 .hero-content {
@@ -188,19 +197,22 @@ ul {
 
 .hero-title {
     font-family: var(--font-heading);
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    font-weight: 700;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 4.5rem;
+    margin-bottom: 30px;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 1s ease;
+    letter-spacing: 2px;
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    margin-bottom: 45px;
     font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
     animation: fadeInUp 1s ease 0.2s both;
+    letter-spacing: 1px;
+    line-height: 1.6;
 }
 
 @keyframes fadeInUp {
@@ -219,35 +231,39 @@ ul {
    =================================== */
 .btn {
     display: inline-block;
-    padding: 14px 35px;
-    border-radius: 50px;
-    font-weight: 600;
-    border: none;
+    padding: 16px 45px;
+    border-radius: 2px;
+    font-weight: 400;
+    border: 2px solid transparent;
     cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 1rem;
+    transition: all 0.4s ease;
+    font-size: 0.95rem;
     text-align: center;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .btn-primary {
     background: var(--accent-color);
-    color: var(--text-dark);
-    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    color: var(--white);
+    border-color: var(--accent-color);
 }
 
 .btn-primary:hover {
-    background: #c9a732;
+    background: transparent;
+    color: var(--accent-color);
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
 
 .btn-secondary {
-    background: var(--primary-color);
+    background: transparent;
     color: var(--white);
+    border-color: var(--white);
 }
 
 .btn-secondary:hover {
-    background: var(--primary-dark);
+    background: var(--white);
+    color: var(--primary-color);
     transform: translateY(-2px);
 }
 
@@ -267,15 +283,18 @@ ul {
 
 .intro-content h2 {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--primary-color);
-    margin-bottom: 25px;
+    margin-bottom: 35px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .intro-content p {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     color: var(--text-light);
-    line-height: 1.8;
+    line-height: 2;
+    font-weight: 300;
 }
 
 /* ===================================
@@ -283,17 +302,21 @@ ul {
    =================================== */
 .section-title {
     font-family: var(--font-heading);
-    font-size: 2.5rem;
+    font-size: 3.2rem;
     color: var(--primary-color);
     text-align: center;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
 }
 
 .section-subtitle {
     text-align: center;
     color: var(--text-light);
-    font-size: 1.1rem;
-    margin-bottom: 50px;
+    font-size: 1.15rem;
+    margin-bottom: 70px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 /* ===================================
@@ -313,21 +336,23 @@ ul {
 
 .appartamento-card {
     background: var(--white);
-    border-radius: 12px;
+    border-radius: 0;
     overflow: hidden;
     box-shadow: var(--shadow);
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    border: 1px solid var(--gray-200);
 }
 
 .appartamento-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
     box-shadow: var(--shadow-lg);
+    border-color: var(--accent-color);
 }
 
 .appartamento-image {
     position: relative;
-    height: 250px;
-    background: linear-gradient(135deg, var(--gray-200) 0%, var(--gray-300) 100%);
+    height: 350px;
+    background: var(--gray-100);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -338,70 +363,86 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: transform 0.3s ease;
+    transition: transform 0.6s ease;
+    filter: grayscale(10%);
 }
 
 .appartamento-card:hover .appartamento-image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
+    filter: grayscale(0%);
 }
 
 .appartamento-badge {
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 25px;
+    right: 25px;
     background: var(--accent-color);
-    color: var(--text-dark);
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 0;
+    font-size: 0.75rem;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 .appartamento-info {
-    padding: 25px;
+    padding: 40px;
 }
 
 .appartamento-info h3 {
     font-family: var(--font-heading);
-    font-size: 1.6rem;
+    font-size: 2rem;
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .appartamento-details {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 }
 
 .detail-item {
-    background: var(--light-bg);
-    padding: 6px 12px;
-    border-radius: 20px;
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
     font-size: 0.9rem;
-    color: var(--text-dark);
+    color: var(--text-light);
+    border-right: 1px solid var(--gray-300);
+    padding-right: 20px;
+    font-weight: 300;
+}
+
+.detail-item:last-child {
+    border-right: none;
 }
 
 .appartamento-info p {
     color: var(--text-light);
-    margin-bottom: 20px;
-    line-height: 1.7;
+    margin-bottom: 25px;
+    line-height: 2;
+    font-weight: 300;
 }
 
 .appartamento-features {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 25px;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
 .appartamento-features span {
-    background: var(--primary-light);
-    color: var(--white);
-    padding: 5px 12px;
-    border-radius: 15px;
+    background: transparent;
+    color: var(--text-dark);
+    padding: 8px 0;
+    border-radius: 0;
     font-size: 0.85rem;
+    border-bottom: 1px solid var(--gray-300);
+    font-weight: 300;
 }
 
 /* ===================================
@@ -421,34 +462,40 @@ ul {
 
 .servizio-card {
     text-align: center;
-    padding: 35px 25px;
-    background: var(--light-bg);
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    padding: 50px 35px;
+    background: var(--white);
+    border-radius: 0;
+    transition: all 0.5s ease;
+    border: 1px solid var(--gray-200);
 }
 
 .servizio-card:hover {
-    background: var(--white);
-    box-shadow: var(--shadow-lg);
-    transform: translateY(-5px);
+    background: var(--light-bg);
+    box-shadow: var(--shadow);
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
 }
 
 .servizio-icon {
-    font-size: 3.5rem;
-    margin-bottom: 20px;
-    filter: grayscale(20%);
+    font-size: 3rem;
+    margin-bottom: 25px;
+    filter: grayscale(30%);
+    opacity: 0.8;
 }
 
 .servizio-card h3 {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: var(--primary-color);
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .servizio-card p {
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 /* ===================================
@@ -468,15 +515,18 @@ ul {
 
 .territorio-text h3 {
     font-family: var(--font-heading);
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .territorio-text p {
     color: var(--text-light);
-    margin-bottom: 20px;
-    line-height: 1.7;
+    margin-bottom: 25px;
+    line-height: 2;
+    font-weight: 300;
 }
 
 .territorio-list {
@@ -502,22 +552,31 @@ ul {
 
 .highlight-card {
     background: var(--white);
-    padding: 25px;
-    border-radius: 12px;
+    padding: 35px;
+    border-radius: 0;
+    box-shadow: var(--shadow-subtle);
+    border-left: 2px solid var(--accent-color);
+    transition: all 0.4s ease;
+}
+
+.highlight-card:hover {
     box-shadow: var(--shadow);
-    border-left: 4px solid var(--primary-color);
+    transform: translateX(5px);
 }
 
 .highlight-card h4 {
     font-family: var(--font-heading);
-    font-size: 1.3rem;
+    font-size: 1.6rem;
     color: var(--primary-color);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .highlight-card p {
     color: var(--text-light);
-    line-height: 1.6;
+    line-height: 1.9;
+    font-weight: 300;
 }
 
 /* ===================================
@@ -543,77 +602,88 @@ ul {
 
 .info-item {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     align-items: flex-start;
-    padding: 20px;
-    background: var(--light-bg);
-    border-radius: 12px;
-    transition: all 0.3s ease;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 0;
+    transition: all 0.4s ease;
+    border: 1px solid var(--gray-200);
 }
 
 .info-item:hover {
-    background: var(--gray-200);
+    background: var(--light-bg);
+    border-color: var(--accent-color);
+    transform: translateY(-2px);
 }
 
 .info-icon {
-    font-size: 2rem;
+    font-size: 1.8rem;
     flex-shrink: 0;
+    opacity: 0.7;
 }
 
 .info-item h4 {
     font-family: var(--font-heading);
     color: var(--primary-color);
-    margin-bottom: 5px;
-    font-size: 1.1rem;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .info-item p {
     color: var(--text-light);
-    line-height: 1.5;
+    line-height: 1.7;
+    font-weight: 300;
 }
 
 /* Contact Form */
 .contact-form {
-    background: var(--light-bg);
-    padding: 35px;
-    border-radius: 12px;
+    background: var(--white);
+    padding: 45px;
+    border-radius: 0;
+    border: 1px solid var(--gray-200);
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     color: var(--text-dark);
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    font-size: 0.95rem;
 }
 
 .form-group input,
 .form-group select,
 .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
-    border: 2px solid var(--gray-300);
-    border-radius: 8px;
+    padding: 15px 20px;
+    border: 1px solid var(--gray-300);
+    border-radius: 0;
     font-family: var(--font-main);
     font-size: 1rem;
     transition: all 0.3s ease;
     background: var(--white);
+    font-weight: 300;
 }
 
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: var(--primary-color);
-    box-shadow: 0 0 0 3px rgba(44, 95, 45, 0.1);
+    border-color: var(--accent-color);
+    box-shadow: none;
 }
 
 .form-group textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 150px;
 }
 
 .form-message {
@@ -642,28 +712,31 @@ ul {
    Footer
    =================================== */
 .footer {
-    background: var(--primary-dark);
+    background: var(--primary-color);
     color: var(--white);
-    padding: 50px 0 20px;
+    padding: 80px 0 30px;
 }
 
 .footer-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 40px;
-    margin-bottom: 40px;
+    gap: 50px;
+    margin-bottom: 50px;
 }
 
 .footer-section h3,
 .footer-section h4 {
     font-family: var(--font-heading);
-    margin-bottom: 20px;
-    color: var(--accent-color);
+    margin-bottom: 25px;
+    color: var(--secondary-color);
+    font-weight: 400;
+    letter-spacing: 0.5px;
 }
 
 .footer-section p {
-    color: rgba(255, 255, 255, 0.8);
-    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.8;
+    font-weight: 300;
 }
 
 .footer-section ul li {
@@ -671,34 +744,38 @@ ul {
 }
 
 .footer-section ul li a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease;
+    font-weight: 300;
 }
 
 .footer-section ul li a:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .social-links {
     display: flex;
-    gap: 15px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 .social-links a {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.7);
     transition: color 0.3s ease;
+    font-weight: 300;
 }
 
 .social-links a:hover {
-    color: var(--accent-color);
+    color: var(--secondary-color);
 }
 
 .footer-bottom {
     text-align: center;
-    padding-top: 30px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: rgba(255, 255, 255, 0.6);
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 300;
+    font-size: 0.9rem;
 }
 
 /* ===================================
@@ -706,21 +783,21 @@ ul {
    =================================== */
 .back-to-top {
     position: fixed;
-    bottom: 30px;
-    right: 30px;
-    background: var(--primary-color);
+    bottom: 40px;
+    right: 40px;
+    background: var(--accent-color);
     color: var(--white);
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
-    font-size: 1.5rem;
+    width: 55px;
+    height: 55px;
+    border-radius: 0;
+    border: 1px solid var(--accent-color);
+    font-size: 1.3rem;
     cursor: pointer;
     opacity: 0;
     visibility: hidden;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     z-index: 999;
-    box-shadow: var(--shadow-lg);
+    box-shadow: var(--shadow);
 }
 
 .back-to-top.visible {
@@ -729,8 +806,10 @@ ul {
 }
 
 .back-to-top:hover {
-    background: var(--primary-dark);
-    transform: translateY(-5px);
+    background: transparent;
+    color: var(--accent-color);
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-lg);
 }
 
 /* ===================================
@@ -746,7 +825,8 @@ ul {
 
 @media (max-width: 768px) {
     :root {
-        --section-padding: 50px 0;
+        --section-padding: 60px 0;
+        --container-padding: 20px;
     }
 
     .menu-toggle {
@@ -789,19 +869,20 @@ ul {
     }
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
+        letter-spacing: 1px;
     }
 
     .hero-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 
     .section-title {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .intro-content h2 {
-        font-size: 2rem;
+        font-size: 2.3rem;
     }
 
     .appartamenti-grid {
@@ -809,46 +890,71 @@ ul {
     }
 
     .servizi-grid {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: 1fr;
+    }
+
+    .appartamento-info {
+        padding: 30px;
+    }
+
+    .contact-form {
+        padding: 30px;
     }
 }
 
 @media (max-width: 480px) {
     .hero {
-        min-height: 500px;
+        min-height: 550px;
     }
 
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.2rem;
+        letter-spacing: 0.5px;
     }
 
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     .btn {
-        padding: 12px 25px;
-        font-size: 0.95rem;
+        padding: 14px 30px;
+        font-size: 0.85rem;
+        letter-spacing: 1px;
     }
 
     .section-title {
-        font-size: 1.7rem;
+        font-size: 1.9rem;
     }
 
     .appartamento-details {
         flex-direction: column;
-        gap: 8px;
+        gap: 12px;
+    }
+
+    .detail-item {
+        border-right: none;
+        border-bottom: 1px solid var(--gray-300);
+        padding-right: 0;
+        padding-bottom: 12px;
+    }
+
+    .detail-item:last-child {
+        border-bottom: none;
+    }
+
+    .appartamento-info {
+        padding: 25px;
     }
 
     .contact-form {
-        padding: 25px 20px;
+        padding: 25px;
     }
 
     .back-to-top {
-        width: 45px;
-        height: 45px;
-        bottom: 20px;
-        right: 20px;
+        width: 50px;
+        height: 50px;
+        bottom: 25px;
+        right: 25px;
     }
 }
 

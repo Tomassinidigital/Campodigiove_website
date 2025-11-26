@@ -80,9 +80,9 @@ window.addEventListener('scroll', () => {
 
     // Add shadow when scrolled
     if (currentScroll > 50) {
-        header.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.12)';
     } else {
-        header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
+        header.style.boxShadow = '0 1px 3px rgba(0, 0, 0, 0.06)';
     }
 
     lastScroll = currentScroll;
@@ -318,5 +318,5 @@ if (navigator.hardwareConcurrency && navigator.hardwareConcurrency < 4) {
 // ===================================
 // Console Welcome Message
 // ===================================
-console.log('%c🏔️ Benvenuto al sito Appartamenti Campo di Giove!', 'font-size: 20px; color: #2c5f2d; font-weight: bold;');
-console.log('%cPer informazioni: info@appartamenticampodigiove.it', 'font-size: 14px; color: #636e72;');
+console.log('%c🏔️ Benvenuto al sito Appartamenti Campo di Giove!', 'font-size: 20px; color: #1a1a1a; font-weight: bold;');
+console.log('%cPer informazioni: info@appartamenticampodigiove.it', 'font-size: 14px; color: #6b6b6b;');
